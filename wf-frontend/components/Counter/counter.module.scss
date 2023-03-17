@@ -1,4 +1,6 @@
 .counterContainer {
+  user-select: none;
+
   height: 100vh;
   display: flex;
   flex-direction: column;

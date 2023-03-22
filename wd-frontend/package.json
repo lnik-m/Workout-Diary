@@ -1,12 +1,13 @@
 {
-  "name": "wf-frontend",
+  "name": "wd-frontend",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "next lint": "next lint",
+    "lint": "eslint --fix --ext .js,.jsx . && stylelint \"**/*.scss\" --fix && prettier -w **/*.{js,jsx}"
   },
   "dependencies": {
     "eslint": "8.36.0",
@@ -24,5 +25,13 @@
   "devDependencies": {
     "postcss-scss": "^4.0.5",
     "sass": "^1.55.0"
+  },
+  "prettier": {
+    "trailingComma": "none",
+    "semi": false,
+    "singleQuote": true,
+    "arrowParens": "avoid",
+    "bracketSpacing": true,
+    "printWidth": 80
   }
 }

@@ -1,6 +1,5 @@
 .counterContainer {
   user-select: none;
-
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -20,6 +19,7 @@
   border-radius: 10px;
   background-color: pink;
   outline: none;
+
   &:hover {
     box-shadow: 0 4px 4px rgb(147 147 147 / 25%);
   }

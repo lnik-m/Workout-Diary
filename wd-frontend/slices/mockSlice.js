@@ -1,25 +1,25 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 export const mockSlice = createSlice({
-    name: 'mock',
+  name: 'mock',
 
-    initialState: {
-        items: []
+  initialState: {
+    items: []
+  },
+
+  reducers: {
+    addItem: (state, action) => {
+      state.items = [action.payload, ...state.items]
     },
-
-    reducers: {
-        addItem: (state, action) => {
-            state.items = [action.payload, ...state.items]
-        },
-        deleteItem: (state, action) => {
-            state.items = [
-                ...state.items.filter(el => el?.name !== action.payload?.name)
-            ]
-        },
-        clearItems: state => {
-            state.items = []
-        }
+    deleteItem: (state, action) => {
+      state.items = [
+        ...state.items.filter(el => el?.name !== action.payload?.name)
+      ]
+    },
+    clearItems: state => {
+      state.items = []
     }
+  }
 })
 
 export const { addItem, deleteItem, clearItems } = mockSlice.actions

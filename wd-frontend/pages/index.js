@@ -1,9 +1,7 @@
 import { Counter } from '@/components'
 
 const Home = () => {
-  return (
-      <Counter />
-  )
+  return <Counter />
 }
 
 // noinspection JSUnusedGlobalSymbols

@@ -20,3 +20,5 @@ For linting code:
 ```bash
 yarn lint
 ```
+
+Also you can use `yarn next lint` for linting code by Next.js

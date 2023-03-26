@@ -13,6 +13,7 @@ import {
 
 import mockReducer from './slices/mockSlice'
 import countReducer from './slices/countSlice'
+import exerciseReducer from "./slices/exerciseSlice";
 
 const persistConfig = {
     key: 'root',
@@ -22,7 +23,8 @@ const persistConfig = {
 const persistedReducer = persistReducer(
     persistConfig,
     combineReducers({
-        items: mockReducer
+        items: mockReducer,
+        exercises: exerciseReducer
     })
 )
 

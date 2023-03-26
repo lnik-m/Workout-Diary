@@ -1,1 +1,7 @@
 export { Counter } from './Counter/counter'
+export { NavLink } from './nav-link/nav-link'
+export { ExerciseListItem } from './exercise-list-item/exercise-list-item'
+export { ExerciseList } from './exercise-list/exercise-list'
+export { Exercise } from './exercise/exercise'
+export { Exercises } from './exercises/exercises'
+export { BackButton } from './back-button/back-button'

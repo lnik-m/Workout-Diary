@@ -1,0 +1,46 @@
+.button {
+    background-color: #E9D5CA;
+    width: 150px;
+    height: 36px;
+    border-radius: 5px;
+    color: #1E1E1E;
+}
+
+.profileForm {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.formInput {
+    border-bottom: 1px solid #E9D5CA;
+    width: 500px;
+    padding: 10px;
+}
+
+.checkbox {
+    display: flex;
+
+}
+
+.checkbox label {
+    padding: 0px 20px 0px 10px;
+}
+
+.checkbox input {
+    cursor: pointer;
+    width: 20px;
+    border: 2px solid #E9D5CA;
+}
+
+.buttonOut {
+    background-color: #E9D5CA;
+    width: 150px;
+    height: 36px;
+    border-radius: 5px;
+    color: #1E1E1E;
+    margin-top: 150px;
+}
+

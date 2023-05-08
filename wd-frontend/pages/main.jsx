@@ -1,7 +1,7 @@
 import { Stack } from '@mantine/core'
-import { IconLink } from '@tabler/icons'
-import { NavLink } from '@/components'
 import styles from './main.module.scss'
+import Link from 'next/link';
+
 
 const Main = () => {
     return (
@@ -20,7 +20,10 @@ const Main = () => {
             <div className={styles.card}>
             <span> This app is designed to help individuals track their physical activity and monitor their progress towards their fitness goals.
             Users can create their own training plans and track their progress by inputting data about their physical activity throughout the day.</span>
-            <button type="submit" className={styles.button}>Start workout</button>
+            <Link href="/auth">
+                <button className={styles.button} link='/auth'>Start workout</button>
+            </Link>
+            
             
             </div>
         </div>

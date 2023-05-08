@@ -9,6 +9,7 @@ const Home = () => {
       <NavLink link="/exercises" icon={<IconLink />} text="Exercises" />
       <NavLink link="/account-settings" icon={<IconLink />} text="Settings"/>
       <NavLink link="/main" icon={<IconLink />} text="Main"/>
+      <NavLink link="/auth" icon={<IconLink />} text="Auth"/>
     </Stack>
   )
 }

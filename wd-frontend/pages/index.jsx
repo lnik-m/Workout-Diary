@@ -8,6 +8,7 @@ const Home = () => {
       <h2>Editor</h2>
       <NavLink link="/exercises" icon={<IconLink />} text="Exercises" />
       <NavLink link="/account-settings" icon={<IconLink />} text="Settings"/>
+      <NavLink link="/main" icon={<IconLink />} text="Main"/>
     </Stack>
   )
 }

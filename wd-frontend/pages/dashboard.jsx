@@ -1,9 +1,7 @@
-import {Dashboard} from '@/components'
+import { Dashboard } from '@/components'
 
 const DashboardPage = () => {
-    return (
-        <Dashboard />
-    )
+  return <Dashboard />
 }
 
 export default DashboardPage

@@ -1,8 +1,7 @@
-import { Profile } from "@/components";
-
+import { Profile } from '@/components'
 
 const ProfilePage = () => {
-    return <Profile />
+  return <Profile />
 }
 
 export default ProfilePage

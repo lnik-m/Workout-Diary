@@ -47,7 +47,6 @@ export const workoutSlice = createSlice({
   }
 })
 
-export const { addWorkout, updateWorkout, deleteWorkout } =
-  workoutSlice.actions
+export const { addWorkout, updateWorkout, deleteWorkout } = workoutSlice.actions
 
 export default workoutSlice.reducer

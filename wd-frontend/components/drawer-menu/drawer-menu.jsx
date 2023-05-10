@@ -1,5 +1,5 @@
 import { useDisclosure } from '@mantine/hooks';
-import {Divider, Drawer, Group, Stack} from '@mantine/core';
+import {Drawer, Group, Stack} from '@mantine/core';
 import styles from './drawer-menu.module.scss'
 import {UnstyledButton} from "@mantine/core";
 import {IconLink, IconMenu} from "@tabler/icons";

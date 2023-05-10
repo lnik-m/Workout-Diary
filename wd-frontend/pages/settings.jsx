@@ -1,7 +1,7 @@
-import { Settings} from "@/components";
+import { Settings } from '@/components'
 
 const SettingsPage = () => {
-    return <Settings />
+  return <Settings />
 }
 
 export default SettingsPage

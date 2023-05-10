@@ -1,7 +1,7 @@
-import {Home} from '@/components'
+import { Home } from '@/components'
 
 const HomePage = () => {
-    return <Home />
+  return <Home />
 }
 
 // noinspection JSUnusedGlobalSymbols

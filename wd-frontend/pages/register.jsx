@@ -3,13 +3,19 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import styles from './auth.module.scss'
 
-const Auth = () => {
-    const [email, setEmail] = useState('');
+const Register = () => {
+    const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [email, setEmail] = useState('');
   
     const handleEmailChange = (event) => {
-      setUsername(event.target.value);
+      setEmail(event.target.value);
     };
+
+    const handleUsernameChange = (event) => {
+        setUsername(event.target.value);
+      };
+    
   
     const handlePasswordChange = (event) => {
       setPassword(event.target.value);
@@ -24,15 +30,25 @@ const Auth = () => {
         <header className={styles.header}>
             <img src="logo.png"/>
         </header>
-        <h2 className={styles.h2}>Sign in</h2>
+        <h2 className={styles.h2}>Sign up</h2>
         <div className={styles.formWrapper}>
         <form onSubmit={handleSubmit} className={styles.form}>
         <div>
           <input
             className={styles.authInput}
-            placeholder='Email'
+            placeholder='Username'
             type="text"
             id="username"
+            value={username}
+            onChange={handleUsernameChange}
+          />
+        </div>
+        <div>
+          <input
+            className={styles.authInput}
+            placeholder='Email'
+            type="text"
+            id="email"
             value={email}
             onChange={handleEmailChange}
           />
@@ -47,14 +63,8 @@ const Auth = () => {
             onChange={handlePasswordChange}
           />
         </div>
-        <button type="submit" className={styles.button}>Sign in</button>
+        <button type="submit" className={styles.button}>Sign up</button>
       </form>
-      <p>
-        Not registered yet?{' '}
-        <Link  className={styles.link} href="/register">
-          Sign up here
-        </Link>
-      </p>
       </div>
 
 
@@ -62,4 +72,4 @@ const Auth = () => {
     )
   }
 
-export default Auth
+export default Register

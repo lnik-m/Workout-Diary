@@ -1,0 +1,43 @@
+.formWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.h2 {
+    padding-top: 162px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.authInput {
+    width: 344px;
+    height: 49px;
+    padding: 10px;
+    background: #9F8ABC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    color: #4D4C7D;
+}
+
+.button {
+    width: 155px;
+    height: 34px;
+    background: #E9D5CA;
+    border-radius: 5px;
+    color: #363062;
+    margin-top: 10px
+}
+

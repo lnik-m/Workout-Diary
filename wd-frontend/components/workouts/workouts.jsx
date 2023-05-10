@@ -1,26 +1,26 @@
 import {Button, Stack} from "@mantine/core";
 import {IconPlus} from "@tabler/icons";
-import {ExerciseList} from "./exercise-list";
+import {WorkoutList} from "./workout-list";
 import {useDispatch} from "react-redux";
-import {addExercise} from "@/slices/exerciseSlice";
+import {addWorkout} from "@/slices/workoutSlice";
 
-export const Exercises = ({exercises}) => {
+export const Workouts = ({workouts}) => {
 
     const dispatch = useDispatch()
 
     return (
     <Stack align="center">
-        <h2>Exercises</h2>
+        <h2>Workouts</h2>
 
         <Button leftIcon={<IconPlus />}
                 variant='light'
                 color='grape'
-                onClick={() => dispatch(addExercise())}
+                onClick={() => dispatch(addWorkout())}
         >
-            Add exercise
+            Add workout
         </Button>
 
-        <ExerciseList exercises={exercises}/>
+        <WorkoutList workouts={workouts}/>
     </Stack>
     )
 }

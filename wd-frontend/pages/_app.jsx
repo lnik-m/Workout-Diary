@@ -4,7 +4,17 @@ import { Provider } from 'react-redux'
 import { PersistGate } from 'redux-persist/integration/react'
 import { MantineProvider } from '@mantine/core'
 
+import { useDisclosure } from '@mantine/hooks';
+import { Drawer, Group, Button } from '@mantine/core';
+
 const MyApp = ({ Component, pageProps }) => {
+
+    const [opened, { open, close }] = useDisclosure(false);
+
+    const content = Array(100)
+        .fill(0)
+        .map((_, index) => <p key={index}>Drawer with scroll</p>);
+
   return (
     <Provider store={store}>
       <PersistGate persistor={persistor}>

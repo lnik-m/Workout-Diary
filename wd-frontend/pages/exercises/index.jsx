@@ -1,4 +1,4 @@
-import {Exercises} from "@/components";
+import {DrawerMenu, Exercises} from "@/components";
 import {useSelector} from "react-redux";
 
 const ExercisesPage = () => {
@@ -6,7 +6,10 @@ const ExercisesPage = () => {
   const exercises = useSelector(state => state.saved.exercises.exercises)
 
   return (
-    <Exercises exercises={exercises} />
+      <>
+        <Exercises exercises={exercises} />
+        <DrawerMenu />
+      </>
   )
 }
 

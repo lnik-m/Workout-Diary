@@ -1,4 +1,4 @@
-import {ExerciseListItem} from "@/components";
+import {ExerciseListItem} from "./exercise-list-item"
 
 export const ExerciseList = ({exercises}) => {
     return (

@@ -15,17 +15,13 @@ export const Exercise = ({exercise, tags}) => {
 
     const [changedEx, setChangedEx] = useState(exercise)
 
-
     const dispatch = useDispatch()
-
     const router = useRouter()
 
     return (
         <>
         <BackButton title='Exercise' link='/exercises' />
-
         <Stack>
-
             <h4>Exercise name:</h4>
             <TextInput
                 value={name}

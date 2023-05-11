@@ -16,13 +16,15 @@
 
 .formInput {
     border-bottom: 1px solid #E9D5CA;
-    width: 500px;
+    width: 350px;
     padding: 10px;
 }
 
 .checkbox {
     display: flex;
-
+    align-items: center;
+    justify-content: center;
+    margin-left: 17px;
 }
 
 .checkbox label {

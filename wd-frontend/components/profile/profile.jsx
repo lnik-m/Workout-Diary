@@ -40,7 +40,7 @@ export const Profile = () => {
 
                 <input
                     className={styles.formInput}
-                    placeholder="bio"
+                    placeholder="sth about you :)"
                     type="text"
                     id="bio"
                     name="bio"

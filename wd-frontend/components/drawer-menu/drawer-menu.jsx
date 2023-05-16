@@ -2,8 +2,9 @@ import { useDisclosure } from '@mantine/hooks';
 import {Drawer, Group, Stack} from '@mantine/core';
 import styles from './drawer-menu.module.scss'
 import {UnstyledButton} from "@mantine/core";
-import {IconLink, IconMenu} from "@tabler/icons";
+import {IconClipboard, IconMenu, IconHome2, IconSettings, IconStretching, IconJumpRope} from "@tabler/icons";
 import {NavLink} from "@/components";
+import { Fragment } from 'react';
 
 export const DrawerMenu = () => {
     const [opened, { open, close }] = useDisclosure(false);
@@ -16,13 +17,13 @@ export const DrawerMenu = () => {
                     overlayProps={{ opacity: 0.5, blur: 4 }}
             >
                 <Stack align="center" justify="center">
-                    <NavLink link="/dashboard" icon={<IconLink />} text="Dashboard"/>
+                    <NavLink link="/dashboard" icon={<IconClipboard />} text="Dashboard"/>
 
-                    <NavLink link="/exercises" icon={<IconLink />} text="Exercises" />
-                    <NavLink link="/workouts" icon={<IconLink />} text="Workouts" />
+                    <NavLink link="/exercises" icon={<IconStretching />} text="Exercises" />
+                    <NavLink link="/workouts" icon={<IconJumpRope />} text="Workouts" />
 
-                    <NavLink link="/settings" icon={<IconLink />} text="Settings"/>
-                    <NavLink link="/" icon={<IconLink />} text="Home"/>
+                    <NavLink link="/settings" icon={<IconSettings />} text="Settings"/>
+                    <NavLink link="/" icon={<IconHome2 />} text="Home"/>
                 </Stack>
             </Drawer>
 
